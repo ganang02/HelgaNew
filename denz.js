@@ -944,7 +944,7 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =`H E L G A 右`
+menu =`GrowHubBOT`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'📑SHOW MENU'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},
@@ -977,9 +977,9 @@ gambar = await getBuffer(randKey.result)
    menu = `*Halo ${pushname}*
 *Kalo buttonnya gak ada*
 *ketik #allmenu*
+b
+BOT INFO
 
-BOT-INFO
-- Owner : @${otod.split('@')[0]}
 - Battery : ${baterai.battery}
 - Mode : ${publik ? 'Public' : 'Self'}
 - Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
@@ -992,7 +992,7 @@ TIME-INFO
 - Wit : ${timeWit}  
 - Hari : ${week} ${weton}
 - Tanggal : ${calender}`
-sendButLocation(from, `${menu}`, "H E L G A 右", {jpegThumbnail:gambar,name:""}, [
+sendButLocation(from, `${menu}`, "GrowHubBOT", {jpegThumbnail:gambar,name:""}, [
 {buttonId:`allmenu`,buttonText:{displayText:'📑SHOW MENU'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},
 {buttonId:`script`,buttonText:{displayText:'🔖SCRIPT'},type:1}
@@ -1010,7 +1010,7 @@ randIndex = Math.floor(Math.random() * jsonData.length);
 randKey = jsonData[randIndex];
 gambar = await getBuffer(randKey.result)
 menu =`╭─❒ 「 INFO 」 ❒──❒
-│ ⬡ Owner : @${otod.split('@')[0]}
+│ ⬡ Owner : @6289661945278
 │ ⬡ Battery : ${baterai.battery}
 │ ⬡ Mode : ${publik ? 'Public' : 'Self'}
 │ ⬡ Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
@@ -1236,13 +1236,13 @@ menu =`╭─❒ 「 INFO 」 ❒──❒
 ├ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
 ├ ${prefix}sharelock [ _teks1|teks2_ ]
 └─────────────────❒`
-sendButLocation(from, `${menu}`, "H E L G A 右", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+sendButLocation(from, `${menu}`, "GrowhubBOT", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© H E L G A_*',
+ footerText: '*_© GrowhubBOT_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -1816,21 +1816,21 @@ break
 					break
 				case 'script':
 		case 'sc':
-		case 'sourcecode':
-		anu =`╭─❒ SCRIPT
-│◦➛Base : Denis Putra
-│◦➛Recode : Helga Ilham
+		case 'sourcecode'=
+   	anu =`╭─❒ SCRIPT
+│◦➛Owner: Lexshinn
+│◦➛Recode : Lexshinn
 │
 └──────[ GITHUB ]──────❒
   │◦➛Script Ory :
-  │◦➛https://github.com/HelgaIlham
+  │◦➛https://github.com/Lexshinn
   │◦➛Script Recode : 
-  │◦➛https://github.com/HelgaIlham
+  │◦➛https://github.com/Lexshinn
   └──────────────────❒`
 const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©H E L G A_*',
+    footerText: '*_©GrowhubBOT_*',
     buttons: buttons,
     headerType: 1
 }
